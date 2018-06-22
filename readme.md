@@ -32,3 +32,7 @@ git push -u origin master
     origin git@github.com:toyijiu/DailyBlog.git (fetch)
     origin git@github.com:toyijiu/DailyBlog.git (push)
 
+
+
+-------------------------------------------------------------------------
+拉取
