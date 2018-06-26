@@ -1,5 +1,5 @@
 module.exports = {
-    entry: __dirname + "/app/pie-tooltip.js",
+    entry: __dirname + "/app/line-tooltip.js",
     output: {
         path: __dirname + "/public",
         filename: "bundle.js"
