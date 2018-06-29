@@ -16,21 +16,21 @@ var projection = d3.geoMercator()
 var path = d3.geoPath()
     .projection(projection);
 
-d3.json("data/china.json", function (e, toporoot) {
-    if (e)
-        return console.error(e);
+// var geojson="https://raw.githubusercontent.com/waylau/svg-china-map/master/china-map/china.geo.json"
+
+d3.json("data/china.geo.json").then( function (toporoot) {
+    // if (e)
+    //     return console.error(e);
     // console.error(toporoot);
 
     // var georoot = topojson.feature(toporoot, toporoot.objects.china);
 
-    // console.log(georoot);
+    console.log("georoot");
 
-    var colors = d3.scaleOrdinal()
-        .domain([0, toporoot.features.length])
-        .range(d3.schemeCategory10)
+    var colors = d3.scaleOrdinal(d3.schemeCategory10);
 
-    var groups = svg.append("g");
-    groups.selectAll("path")
+    // var groups = svg.append("g");
+    svg.selectAll("path")
         .data(toporoot.features)
         .enter()
         .append("path")
@@ -38,6 +38,8 @@ d3.json("data/china.json", function (e, toporoot) {
         .style("fill", function (d, i) {
             return colors(i);
         })
-        .attr("d", path);
+        .attr("d", path)
+        .attr("stroke","rgba(255,255,255,1)")
+        .attr("stroke-width", 1);
 
 })

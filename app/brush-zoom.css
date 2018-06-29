@@ -1,0 +1,10 @@
+.zoom{
+    fill: none;
+    pointer-events: all;
+    cursor: move;
+}
+
+.area{
+    fill: steelblue;
+    clip-path: url(#clip);
+}
