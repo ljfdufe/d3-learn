@@ -2,7 +2,7 @@ var webpack = require("webpack");
 
 
 module.exports = {
-    entry: __dirname + "/app/brush-zoom.js",
+    entry: __dirname + "/app/Hexagonal-Binning.js",
     output: {
         path: __dirname + "/public",
         filename: "bundle.js",

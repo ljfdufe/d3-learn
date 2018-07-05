@@ -1,0 +1,9 @@
+.nation{
+    fill: #dddddd;
+}
+
+.states{
+    fill: none;
+    stroke: #ffffff;
+    stroke-linejoin: round;
+}
