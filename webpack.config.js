@@ -2,7 +2,7 @@ var webpack = require("webpack");
 
 
 module.exports = {
-    entry: __dirname + "/app/Hexagonal-Binning.js",
+    entry: __dirname + "/app/Condegram Spiral Plot.js",
     output: {
         path: __dirname + "/public",
         filename: "bundle.js",

@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HelloWorld</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body>
+    <p>李雷</p>
+    <p>韩梅梅</p>
+</body>
+<script>
+    var p = d3.select("body").selectAll("p").text("中学生");
+    p.style("color", "red")
+        .style("font-size", "80px");
+</script>
+
+</html>

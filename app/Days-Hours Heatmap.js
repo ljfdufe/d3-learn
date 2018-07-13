@@ -14,10 +14,12 @@ var itemSize = 18,
         left: 25
     };
 //formats
+
 var hourFormat = d3.timeFormat("%H"),
     dayFormat = d3.timeFormat("%j"),
     timeFormat2 = d3.timeFormat("%Y-%m-%dT%X"),
-    monthDayFormat = d3.timeFormat("%m.%d");
+    monthDayFormat = d3.timeFormat("%m.%d"),
+    timeParse = d3.timeParse("%Y-%m-%dT%X")
 
 //data vars for rendering
 //colorCalibration定义颜色
@@ -50,7 +52,7 @@ d3.json("./data/days-hours-heatmap.json").then(function (data) {
         //     "value": {
         //         "PM2.5": 41.61
         //     }
-        valueObj["date"] = timeFormat2.parse(valueObj["timestamp"]);
+        valueObj["date"] = timeParse(valueObj["timestamp"]);
         var day = valueObj["day"] = monthDayFormat(valueObj["date"]);
 
     })
