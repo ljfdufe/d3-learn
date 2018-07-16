@@ -2,7 +2,7 @@ var webpack = require("webpack");
 
 
 module.exports = {
-    entry: __dirname + "/app/Heatmap (2D Histogram, CSV).js",
+    entry: __dirname + "/app/Stacked Bar Chart.js",
     output: {
         path: __dirname + "/public",
         filename: "bundle.js",
