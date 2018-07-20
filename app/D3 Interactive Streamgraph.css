@@ -1,0 +1,6 @@
+.axis path, .axis line{
+    fill: none;
+    stroke: #552323;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+}

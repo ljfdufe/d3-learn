@@ -21,7 +21,7 @@ var svg = d3.select("div").append("svg")
 var xScale = d3.scaleBand()
     .rangeRound([0, width])
     .paddingInner(0.05)
-    .align(0.1);
+    .align(0.2);
 
 var yScale = d3.scaleLinear()
     .rangeRound([height, 0]);
@@ -40,7 +40,7 @@ d3.csv("./data/Stacked Bar Chart.csv", type).then(function (data) {
         return d.State;
     }));
     yScale.domain([0, d3.max(data, function (d) {
-        return d.total
+        return d.total;
     })]).nice();
     color.domain(keys);
     console.log(d3.stack().keys(keys)(data))
