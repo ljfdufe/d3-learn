@@ -118,7 +118,7 @@ function type(d, i, columns) {
     // console.log(d)
     // console.log(i)
     // console.log(columns)
-    // 计算没一行的和
+    // 计算每一行的和
     for (var i = 1, t = 0; i < columns.length; ++i)
         t += d[columns[i]] = +d[columns[i]];
     d.total = t;

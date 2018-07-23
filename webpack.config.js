@@ -2,7 +2,7 @@ var webpack = require("webpack");
 
 
 module.exports = {
-    entry: __dirname + "/app/D3 Interactive Streamgraph.js",
+    entry: __dirname + "/app/Grouped Bar Chart.js",
     output: {
         path: __dirname + "/public",
         filename: "bundle.js",
