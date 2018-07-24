@@ -119,4 +119,10 @@ stack之后的数据
 console.log(area(stackeddata[0]))  
 看到path d属性，x值nan，说明x轴相关的有问题。
 
--------
+-------------
+## The Amazing Pie 
+- transition  attrTween
+- 插值器一些使用的点
+
+-------------
+
