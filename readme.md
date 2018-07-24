@@ -92,6 +92,7 @@ svg.append("g")
 ## Bivariate-Hexbin-Map
 可学习的点
 - Promise.all race等
+- projecttion 将经纬度 转换为 svg坐标系内的点坐标
 -------------
 ## Heatmap (2D Histogram, CSV)
 学习的点
@@ -101,6 +102,9 @@ svg.append("g")
 ## Pie Multiples with Nesting
 - d3.nest
 - selection filter
+
+**Calender View**中的nest更为详细
+
 ----------------
 ## D3 Interactive Streamgraph
 

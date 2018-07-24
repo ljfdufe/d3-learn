@@ -2,7 +2,7 @@ var webpack = require("webpack");
 
 
 module.exports = {
-    entry: __dirname + "/app/Grouped Bar Chart.js",
+    entry: __dirname + "/app/Calendar View.js",
     output: {
         path: __dirname + "/public",
         filename: "bundle.js",

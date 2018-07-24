@@ -24,6 +24,7 @@
     "d3-tile": "^0.0.4",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.3",
+    "topojson": "^3.0.2",
     "webpack-dev-server": "^3.1.4"
   }
 }
